@@ -13,13 +13,14 @@
   list-style-type: none;
   display: flex;
   cursor: pointer;
+  margin-right: 20px;
 }
 .nav-items > ul > li{
   padding:10px;
 }
 .logo > img{
   border-radius: 20%;
-  margin:10px
+  margin:10px;
 }
 .curve {
   position: absolute;
@@ -37,17 +38,36 @@
   border-radius: 50% 50% 0 0;
 }
 .card{
-   height: 280px;
-   width: 200px;
-   border: 1px solid black;
-   margin: 20px;
+  height: 280px;
+  width: 200px;
+   /* border: 1px solid black; */
+  margin: 20px;
+  background-color: #f3f3f3;
+  padding: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent;
+  border-radius: 15px;
+  overflow: hidden;
+  /* transition: border 0.3s ease-in-out; */
+   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.card:hover {
+  box-shadow: 0 5px 10px rgb(232, 90, 90), 0 5px 10px rgb(232, 90, 90);
+  transform: translateY(-2px); 
+  cursor:pointer;
+}
+.card-info >h3,h4{
+  margin: 5px;
+}
+.res-logo > img{
+  height: 150px;
+  border-radius: 5px;
 }
 .res-Container{
   display: flex;
   align-items: center;
   justify-content:center;
   flex-wrap: wrap;
-  
 }
 .body {
   display: flex;
@@ -55,7 +75,8 @@
   justify-content: end;
 }
 .search{
-  margin: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border: 1px solid black;
   padding: 10px;
   width: 100px;
