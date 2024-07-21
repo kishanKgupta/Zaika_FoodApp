@@ -1,3 +1,9 @@
+/* In your main CSS file (e.g., App.css) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
 .container{
   display: flex;
@@ -18,9 +24,9 @@
 .nav-items > ul > li{
   padding:10px;
 }
-.logo > img{
+.res-logo > img{
   border-radius: 20%;
-  margin:10px;
+  width: 100%;
 }
 .curve {
   position: absolute;
@@ -40,25 +46,49 @@
 .card{
   height: 280px;
   width: 200px;
-   /* border: 1px solid black; */
   margin: 20px;
-  background-color: #f3f3f3;
   padding: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: 2px solid transparent;
   border-radius: 15px;
   overflow: hidden;
-  /* transition: border 0.3s ease-in-out; */
    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 .card:hover {
-  box-shadow: 0 5px 10px rgb(232, 90, 90), 0 5px 10px rgb(232, 90, 90);
+   box-shadow: 0 4px 8px rgba(255, 2, 2, 0.202);
   transform: translateY(-2px); 
   cursor:pointer;
 }
 .card-info >h3,h4{
   margin: 5px;
 }
+.card-info > div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.card-info > .area{
+  font-weight: lighter;
+}
+.card-info > .name{
+   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.rating{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+.cuisines{
+  font-size: 14px;
+  font-weight: 100;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .res-logo > img{
   height: 150px;
   border-radius: 5px;
@@ -72,7 +102,9 @@
 .body {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: space-around;
+  gap: 120px;
+  margin-bottom: 20px;
 }
 .search{
   margin-top: 10px;
@@ -105,4 +137,13 @@
 .footer-content {
   position: relative;
   z-index: 1; /* Ensure footer content is above the curve */
+}
+.header-1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.App-header{
+  font-size: 80px;
 }
