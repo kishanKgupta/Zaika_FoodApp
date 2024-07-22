@@ -1,29 +1,34 @@
-/* In your React components */
-import './index.css'; // Make sure to import the CSS file where you included the fonts
+import React from "react";
+import DesignerImage from "./component/Designer.png";
 
-function Header() {
+const Header = () => {
   return (
-    <div className="header-1">
-      <header>
-              <h1  className="App-header" style={{ fontFamily: 'Playfair Display, serif' }}>Welcome to Zaika</h1>
-              
-        {/* <p style={{ fontFamily: 'Roboto, sans-serif' }}>
-          Discover the best food recipes and cooking tips.
-        </p> */}
-        {/* <button style={{ fontFamily: 'Poppins, sans-serif' }}>
-          Get Started
-        </button> */}
-      </header>
-      {/* <main>
-        <section>
-          <h2 style={{ fontFamily: 'Merriweather, serif' }}>Our Top Restaurant </h2>
-          <p style={{ fontFamily: 'Lora, serif' }}>
-            Try our top recipes curated just for you.
-          </p>
-        </section>
-      </main> */}
-    </div>
+    <>
+      <div className="header">
+        <div className="logo">
+          <img src={DesignerImage} alt="logo" width="100px" height="100px" />
+        </div>
+        <div className="curve curve-top"></div>
+        <div className="curve curve-bottom"></div>
+        <div className="nav-items">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Cart</li>
+          </ul>
+        </div>
+      </div>
+      <div className="header-1">
+        <h1
+          className="App-header"
+          style={{ fontFamily: "Playfair Display, serif" }}
+        >
+          Welcome to Zaika
+        </h1>
+      </div>
+    </>
   );
-}
+};
 
 export default Header;
