@@ -1,33 +1,28 @@
-import SVG from "./component/StartSvg";
-
+import SVG from "./component/starSvg";
+import { CDN_url } from "./utils/constant";
 
 const Card = (props) => {
-  console.log(props.info);
+  const { restaurant } = props;
   const { name, cuisines, avgRatingString, sla, locality, cloudinaryImageId } =
-    props.resData;
+    restaurant;
+
   return (
     <>
       <div className="card">
         <div className="res-logo">
-          <img
-            src={
-              "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
-              cloudinaryImageId
-            }
-            alt="food"
-          />
+          <img src={CDN_url + cloudinaryImageId} alt="food" />
         </div>
         <div className="card-info">
-          <h3 className="name">{name}</h3>
+          <h3 className="name"> {name}</h3>
           <div>
             <div className="rating">
-              {SVG}
-              {avgRatingString}
+               {SVG}
+               {avgRatingString}
             </div>
             <h4>{sla.slaString}</h4>
           </div>
-          <h4 className="cuisines">{cuisines.join(", ")}</h4>
-          <h4 className="area">{locality}</h4>
+          <h4 className="cuisines"> {cuisines.join(', ')}</h4>
+          <h4 className="area"> {locality}</h4>
         </div>
       </div>
     </>

@@ -1,12 +1,12 @@
 import React from "react";
-import DesignerImage from "./component/Designer.png";
+import Designer from "../src/component/Designer.jpg";
 
 const Header = () => {
   return (
     <>
       <div className="header">
         <div className="logo">
-          <img src={DesignerImage} alt="logo" width="100px" height="100px" />
+          <img src={Designer} alt="logo" width="100px" height="100px" />
         </div>
         <div className="curve curve-top"></div>
         <div className="curve curve-bottom"></div>

@@ -1,4 +1,4 @@
-const SVG = (
+let SVG = (
   <svg
     width="20"
     height="20"

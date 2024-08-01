@@ -148,3 +148,15 @@
 .App-header{
   font-size: 80px;
 }
+.filter{
+  display: flex;
+  align-items: center;
+   margin-left: 100px;
+   margin-right: 100px;
+   background-color: #f3f3f3;
+   padding: 10px;
+   gap: 10px;
+}
+.filter > button{
+  height: 30px;
+}
