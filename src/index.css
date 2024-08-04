@@ -13,8 +13,8 @@
 .nav-items > ul{
   list-style-type: none;
   display: flex;
-  cursor: pointer;
   margin-right: 20px;
+  gap: 10px;
 }
 .logo > img{
   border-radius: 20%;
@@ -23,8 +23,9 @@
   margin: 10px;
 }
 .nav-items > ul > li{
-  padding:10px;
+  cursor: pointer;
 }
+
 .res-logo > img{
   border-radius: 20%;
   width: 100%;
@@ -108,11 +109,37 @@
   margin-bottom: 20px;
 }
 .search{
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 1px solid black;
-  padding: 10px;
-  width: 100px;
+  display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+.search > input{
+  border: none;
+  outline: none;
+  height: 32px;
+  border: 2px solid rgba(0, 0, 0, 0.75) ;
+  text-align: right;
+  border-radius:  10px 0px 0px 10px;
+  font-weight:500;
+  font-size:medium;
+}
+.searchBtn{
+  border: none;
+  height: 38px;
+  text-align: center;
+  border-right: 2px solid rgba(0, 0, 0, 0.75);
+  border-top: 2px solid  rgba(0, 0, 0, 0.75);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.75);
+  border-radius:  0px 10px 10px 0px;
+  cursor: pointer;
+  
+}
+.searchBtn:hover{
+  background-color:  #dbdbdb;
+}
+.searchBtn:active{
+  background-color: #848484;
 }
 .footer {
   margin-top: 20px;

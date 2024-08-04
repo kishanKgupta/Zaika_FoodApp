@@ -58,7 +58,11 @@ component composition
 # Architecture 
 - Monolithik Architecture
 - Micro Service Architecture
-
+- Rest API
+- CORS policy
+- optainal chaining
+- conditional rendering
+- shimmar ui
 
 
 

@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Designer from "../src/component/Designer.jpg";
 
 const Header = () => {
+ 
+  const [btnName, setbtnName] = useState("Login");
   return (
     <>
       <div className="header">
@@ -16,6 +18,7 @@ const Header = () => {
             <li>About</li>
             <li>Contact</li>
             <li>Cart</li>
+            <button className="login" onClick={() => {btnName == "Login" ? setbtnName("Logout") : setbtnName("Login");}}>{btnName}</button>
           </ul>
         </div>
       </div>
