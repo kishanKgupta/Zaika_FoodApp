@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Designer from "../src/component/Designer.jpg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
  
@@ -14,11 +15,24 @@ const Header = () => {
         <div className="curve curve-bottom"></div>
         <div className="nav-items">
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
             <li>Cart</li>
-            <button className="login" onClick={() => {btnName == "Login" ? setbtnName("Logout") : setbtnName("Login");}}>{btnName}</button>
+            <button
+              className="login"
+              onClick={() => {
+                btnName == "Login" ? setbtnName("Logout") : setbtnName("Login");
+              }}
+            >
+              {btnName}
+            </button>
           </ul>
         </div>
       </div>

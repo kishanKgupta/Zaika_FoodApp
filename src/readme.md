@@ -3,7 +3,7 @@ What is crossorigin
 props
 what is react and what is the benefit of the react library
 difference between library and framework
-development and production 
+development and production
 NPM , Packages
 dependencies
 Bundler( webPack, Parcel, Vite )
@@ -18,15 +18,16 @@ cross side scripting
 props = just argument of function
 destructuring
 config driven UI
-- when use .map alway use with key = id
-rendering , re-rendering , render cycle
-Can we write export with default and with variable as well ?
-why react fast
-what is reconciliaion.
-component composition
 
+- when use .map alway use with key = id
+  rendering , re-rendering , render cycle
+  Can we write export with default and with variable as well ?
+  why react fast
+  what is reconciliaion.
+  component composition
 
 # parcel
+
 - Dev Build
 - Local Server
 - HMR - Hot module replacement
@@ -46,6 +47,7 @@ component composition
 - Different dev and prod bundles
 
 # React Hooks
+
 - normal javascript utility function
 - facebook
 - useState()
@@ -55,7 +57,8 @@ component composition
 - virtual dom - representation of vartual dom
 - diff algorithm
 
-# Architecture 
+# Architecture
+
 - Monolithik Architecture
 - Micro Service Architecture
 - Rest API
@@ -63,11 +66,17 @@ component composition
 - optainal chaining
 - conditional rendering
 - shimmar ui
+- update ui feature
+- coss policy.io
 
+# For routing
 
-
-
-
+- react router dom
+- npm i react-router-dom
+- routing configration
+- Difference between anchor tag and Link tag - reload the page
+- single page Application
+- Dynamic Routing
 
 ...............
 echo "# Namaste_React_project" >> README.md
