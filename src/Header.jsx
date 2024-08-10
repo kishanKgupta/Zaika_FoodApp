@@ -36,14 +36,6 @@ const Header = () => {
           </ul>
         </div>
       </div>
-      <div className="header-1">
-        <h1
-          className="App-header"
-          style={{ fontFamily: "Playfair Display, serif" }}
-        >
-          Welcome to Zaika
-        </h1>
-      </div>
     </>
   );
 };

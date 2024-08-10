@@ -8,6 +8,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider,Outlet } from "react-router-dom";
 import Contact from "./Contact.jsx";
 import ErrorPage from "./ErrorPage.jsx";
+import RestaurantMenu from "./RestaurantMenu.jsx";
 
 const AppLayout = () => {
   return (
@@ -36,13 +37,15 @@ const appRouter = createBrowserRouter([
         path: "/contact",
         element: <Contact />,
       },
+      {
+        path: "/restaurant/:resId",
+        element: <RestaurantMenu/>,
+      },
     ],
-    errorElement:<ErrorPage/>
+    errorElement: <ErrorPage />,
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
     <RouterProvider router={appRouter} />
-  </React.StrictMode>
 );

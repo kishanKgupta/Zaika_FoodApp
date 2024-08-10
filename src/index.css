@@ -126,7 +126,7 @@
 }
 .searchBtn{
   border: none;
-  height: 38px;
+  height: 32px;
   text-align: center;
   border-right: 2px solid rgba(0, 0, 0, 0.75);
   border-top: 2px solid  rgba(0, 0, 0, 0.75);
@@ -225,4 +225,165 @@
 
 .go-back-button:hover {
   background-color: #c82333;
+}
+
+
+
+.about, .contact {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  font-family: Arial, sans-serif;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-item {
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.con-btn {
+  padding: 10px 20px;
+  background-color: #f8b400;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.con-btn:hover {
+  background-color: #d69500;
+}
+.about {
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 900px;
+  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+.about h1, .about h2 {
+  color: #f8b400;
+  margin-bottom: 15px;
+}
+
+.about ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.about p, .about ul li {
+  margin-bottom: 15px;
+}
+
+/* Shimmer effect styles */
+.shimmer-wrapper {
+  background: #f6f7f8;
+  background-image: linear-gradient(90deg, #f6f7f8 0px, #edeef1 40px, #f6f7f8 80px);
+  background-size: 1200px;
+  animation: shimmer 1.5s infinite linear forwards;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1200px 0;
+  }
+  100% {
+    background-position: 1200px 0;
+  }
+}
+
+.shimmer-card {
+  width: 300px;
+  height: 180px;
+  margin: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.shimmer-img {
+  width: 100%;
+  height: 120px;
+  border-radius: 8px 8px 0 0;
+}
+
+.shimmer-content {
+  padding: 10px;
+}
+
+.shimmer-title {
+  height: 20px;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.shimmer-text {
+  height: 15px;
+  width: 60%;
+}
+
+.shimmerUI{
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+  flex-wrap: wrap;
+}
+
+.menu-data{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.resMenu{
+  background-color: #fbdc87;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+.menu-card{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.301);
+  font-weight: 600;
+  
+}
+.menu-img{
+  width: 9.375rem;
+height: 9.375rem;
+border-radius: 0.625rem;
+margin: 0.625rem;
+
+}
+.menu-rating{
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
