@@ -5,7 +5,7 @@ import Body from "./Body.jsx";
 import Footer from "./Footer.jsx";
 import About from "./About.jsx";
 import "./index.css";
-import { createBrowserRouter, RouterProvider,Outlet } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Contact from "./Contact.jsx";
 import ErrorPage from "./ErrorPage.jsx";
 import RestaurantMenu from "./RestaurantMenu.jsx";
@@ -14,7 +14,7 @@ const AppLayout = () => {
   return (
     <div>
       <Header />
-      <Outlet/>
+      <Outlet />
       <Footer />
     </div>
   );
@@ -39,7 +39,7 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/restaurant/:resId",
-        element: <RestaurantMenu/>,
+        element: <RestaurantMenu />,
       },
     ],
     errorElement: <ErrorPage />,
@@ -47,5 +47,5 @@ const appRouter = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-    <RouterProvider router={appRouter} />
+  <RouterProvider router={appRouter} />
 );
