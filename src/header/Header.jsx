@@ -16,7 +16,7 @@ const Header = () => {
     <>
       <header className="flex items-center justify-between sm:p-4  p-2">
         <div className="text-yellow-600 font-bold text-2xl">
-          <p>EatXpress.</p>
+          <p>Zaika.</p>
         </div>
         <nav className="max-sm:hidden">
           <ul className="flex justify-around items-center gap-4">

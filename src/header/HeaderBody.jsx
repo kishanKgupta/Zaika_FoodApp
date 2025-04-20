@@ -10,7 +10,7 @@ const HeaderBody = () => {
           alt="food image"
         />
         <h1 className="absolute inset-0 flex items-center justify-center  text-white font-bold text-2xl sm:text-6xl bg-slate-800 bg-opacity-50">
-          Welcome to EatXpress
+          Welcome to Zaika
         </h1>
       </div>
     </>
