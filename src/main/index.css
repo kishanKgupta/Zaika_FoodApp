@@ -3,108 +3,6 @@
 @tailwind utilities;
 
 
-
-.header{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style-type: none;
-  position: relative;
-  background-color: #ea6d6d;
-  overflow: hidden;
-  font-size:medium;
-}
-.nav-items > ul{
-  list-style-type: none;
-  display: flex;
-  margin-right: 20px;
-  gap: 10px;
-}
-.logo > img{
-  border-radius: 20%;
-  height: 80px;
-  width: 80px;
-  margin: 10px;
-}
-.nav-items > ul > li{
-  cursor: pointer;
-}
-
-.res-logo > img{
-  border-radius: 20%;
-  width: 100%;
-}
-.curve {
-  position: absolute;
-  width: 100%;
-  height: 65px;
-  left: 0;
-  background: rgb(128, 232, 90);
-}
-.curve-top {
-  top: -50px;
-  border-radius: 0 0 50% 50%;
-}
-.curve-bottom {
-  bottom: -50px;
-  border-radius: 50% 50% 0 0;
-}
-.card{
-  height: 280px;
-  width: 200px;
-  margin: 20px;
-  padding: 5px;
-  border: 2px solid transparent;
-  border-radius: 15px;
-  overflow: hidden;
-  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-.card:hover {
-  box-shadow: 0 4px 8px rgba(255, 2, 2, 0.202);
-  transform: translateY(-2px); 
-  cursor:pointer;
-}
-.card-info >h3,h4{
-  margin: 5px;
-}
-.card-info > div{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 8px;
-}
-.card-info > .area{
-  font-weight: 400;
-}
-.card-info > .name{
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.rating{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2px;
-}
-.cuisines{
-  font-size: 14px;
-  font-weight: 200;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.res-logo > img{
-  height: 150px;
-  border-radius: 5px;
-}
-.res-Container{
-  display: flex;
-  align-items: center;
-  justify-content:center;
-  flex-wrap: wrap;
-}
 .body {
   display: flex;
   align-items: center;
@@ -112,37 +10,35 @@
   gap: 120px;
   margin-bottom: 20px;
 }
-.search{
+.search {
   display: flex;
- justify-content: center;
- align-items: center;
-
+  justify-content: center;
+  align-items: center;
 }
-.search > input{
+.search > input {
   border: none;
   outline: none;
   height: 32px;
-  border: 2px solid rgba(0, 0, 0, 0.75) ;
+  border: 2px solid rgba(0, 0, 0, 0.75);
   text-align: right;
-  border-radius:  10px 0px 0px 10px;
-  font-weight:500;
-  font-size:medium;
+  border-radius: 10px 0px 0px 10px;
+  font-weight: 500;
+  font-size: medium;
 }
-.searchBtn{
+.searchBtn {
   border: none;
   height: 32px;
   text-align: center;
   border-right: 2px solid rgba(0, 0, 0, 0.75);
-  border-top: 2px solid  rgba(0, 0, 0, 0.75);
+  border-top: 2px solid rgba(0, 0, 0, 0.75);
   border-bottom: 2px solid rgba(0, 0, 0, 0.75);
-  border-radius:  0px 10px 10px 0px;
+  border-radius: 0px 10px 10px 0px;
   cursor: pointer;
-  
 }
-.searchBtn:hover{
-  background-color:  #dbdbdb;
+.searchBtn:hover {
+  background-color: #dbdbdb;
 }
-.searchBtn:active{
+.searchBtn:active {
   background-color: #848484;
 }
 .footer {
@@ -161,7 +57,7 @@
   left: 0;
   width: 100%;
   height: 50px;
-  background: rgb(90, 232, 107); /* Red color */
+  background: rgba(255, 2, 2, 0.202); /* Red color */
   border-radius: 0 0 50% 50%;
   z-index: 1; /* Send the curve behind the content */
 }
@@ -170,28 +66,26 @@
   position: relative;
   z-index: 1; /* Ensure footer content is above the curve */
 }
-.header-1{
+.header-1 {
   display: flex;
   align-items: center;
   justify-content: center;
- 
 }
-.App-header{
+.App-header {
   font-size: 80px;
 }
-.filter{
+.filter {
   display: flex;
   align-items: center;
-   margin-left: 100px;
-   margin-right: 100px;
-   background-color: #f3f3f3;
-   padding: 10px;
-   gap: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color: #f3f3f3;
+  padding: 10px;
+  gap: 10px;
 }
-.filter > button{
+.filter > button {
   height: 30px;
 }
-
 
 /* src/components/ErrorPage.css */
 .error-page {
@@ -206,7 +100,7 @@
 
 .error-title {
   font-size: 10rem;
-  color: #dc3545;
+  color: rgba(255, 2, 2, 0.202);
   margin: 0;
 }
 
@@ -220,7 +114,7 @@
   padding: 0.5rem 1rem;
   font-size: 1rem;
   color: #fff;
-  background-color: #dc3545;
+  background-color: rgba(255, 2, 2, 0.202);
   border: none;
   border-radius: 0.25rem;
   cursor: pointer;
@@ -228,12 +122,11 @@
 }
 
 .go-back-button:hover {
-  background-color: #23c82e;
+  background-color: rgba(255, 2, 2, 0.202);
 }
 
-
-
-.about, .contact {
+.about,
+.contact {
   padding: 20px;
   margin: 20px auto;
   max-width: 800px;
@@ -263,7 +156,8 @@ label {
   margin-bottom: 5px;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
@@ -285,11 +179,12 @@ input, textarea {
   margin: 20px auto;
   max-width: 900px;
   line-height: 1.6;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #333;
 }
 
-.about h1, .about h2 {
+.about h1,
+.about h2 {
   color: #f8b400;
   margin-bottom: 15px;
 }
@@ -299,14 +194,20 @@ input, textarea {
   padding-left: 20px;
 }
 
-.about p, .about ul li {
+.about p,
+.about ul li {
   margin-bottom: 15px;
 }
 
 /* Shimmer effect styles */
 .shimmer-wrapper {
   background: #f6f7f8;
-  background-image: linear-gradient(90deg, #f6f7f8 0px, #edeef1 40px, #f6f7f8 80px);
+  background-image: linear-gradient(
+    90deg,
+    #f6f7f8 0px,
+    #edeef1 40px,
+    #f6f7f8 80px
+  );
   background-size: 1200px;
   animation: shimmer 1.5s infinite linear forwards;
 }
@@ -350,43 +251,41 @@ input, textarea {
   width: 60%;
 }
 
-.shimmerUI{
+.shimmerUI {
   display: flex;
   align-items: center;
-  justify-content:center ;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
-.menu-data{
+.menu-data {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.resMenu{
+.resMenu {
   background-color: #fbdc87;
   border: 1px solid black;
   margin: 10px;
   padding: 10px;
 }
-.menu-card{
-  display:flex;
+.menu-card {
+  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
   margin: 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.301);
   font-weight: 600;
-  
 }
-.menu-img{
+.menu-img {
   width: 9.375rem;
-height: 9.375rem;
-border-radius: 0.625rem;
-margin: 0.625rem;
-
+  height: 9.375rem;
+  border-radius: 0.625rem;
+  margin: 0.625rem;
 }
-.menu-rating{
+.menu-rating {
   display: flex;
   align-items: center;
   gap: 5px;

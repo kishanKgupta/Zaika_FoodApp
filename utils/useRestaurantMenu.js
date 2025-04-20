@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+//custom hooks
 const useRestaurantMenu = (resId) => {
   const [menuInfo, setMenuInfo] = useState(null);
   const [loading, setLoading] = useState(true); // Loading state
@@ -15,10 +16,11 @@ const useRestaurantMenu = (resId) => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
-
+        console.log(menuInfo)
         const data = await response.json();
         console.log("Fetched Menu Data:", data); // Log the fetched data
         setMenuInfo(data);
+        
       } catch (error) {
         console.error("Error fetching data:", error);
         setError(error.message);
